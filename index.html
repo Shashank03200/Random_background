@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HexCode BackGround</title>
+    <style>
+        .mainDiv {
+            margin: 15rem auto;
+            text-align: center;
+        }
+
+        .sliderDiv {
+            background-color: beige;
+            border-radius: 30px;
+            margin: auto;
+            width: 400px;
+        }
+
+        .angleSection {
+            background-color: white;
+            border-radius: 10%;
+            margin: 50px auto;
+            width: 60px;
+            height: 40px;
+        }
+
+        button {
+            padding: 18px;
+            width: 180px;
+            margin: 20px;
+            font-size: 26px;
+            background-color: cornflowerblue;
+            color: black;
+            border-radius: 8px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        body {
+            text-align: center;
+            background: linear-gradient(45deg, red, blue);
+            background: linear-gradient(-45deg, blue, red);
+        }
+
+        label {
+            font-size: 26px;
+        }
+
+        input[type='range'] {
+            width: 200px;
+            margin: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="sliderDiv">
+            <label for="angles">0<sup>&deg;</sup></label><input type="range" name="angleSlider" id="angles" min=0
+                max=180 step="2"><label for="angles">180<sup>&deg;</sup></label>
+        </div>
+        <div class="angleSection">
+            <label class="angleLabel">90<sup>&deg;</sup></label>
+        </div>
+        <button>Generate</button>
+    </div>
+    <script src="code.js">
+
+    </script>
+</body>
+
+</html>
