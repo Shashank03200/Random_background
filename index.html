@@ -5,65 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HexCode BackGround</title>
-    <style>
-        .mainDiv {
-            margin: 15rem auto;
-            text-align: center;
-        }
-
-        .sliderDiv {
-            background-color: beige;
-            border-radius: 30px;
-            margin: auto;
-            width: 400px;
-        }
-
-        .angleSection {
-            background-color: white;
-            border-radius: 10%;
-            margin: 50px auto;
-            width: 60px;
-            height: 40px;
-        }
-
-        button {
-            padding: 18px;
-            width: 180px;
-            margin: 20px;
-            font-size: 26px;
-            background-color: cornflowerblue;
-            color: black;
-            border-radius: 8px;
-            outline: none;
-            cursor: pointer;
-        }
-
-        body {
-            text-align: center;
-            background: linear-gradient(45deg, red, blue);
-            background: linear-gradient(-45deg, blue, red);
-        }
-
-        label {
-            font-size: 26px;
-        }
-
-        input[type='range'] {
-            width: 200px;
-            margin: 20px
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="header">
+        Random Background Generator
+    </div>
     <div class="mainDiv">
         <div class="sliderDiv">
             <label for="angles">0<sup>&deg;</sup></label><input type="range" name="angleSlider" id="angles" min=0
                 max=180 step="2"><label for="angles">180<sup>&deg;</sup></label>
         </div>
         <div class="angleSection">
-            <label class="angleLabel">90<sup>&deg;</sup></label>
+            <label class="angleLabel">Angle: 90<sup>&deg;</sup></label>
         </div>
+
+        <div class="css-props">
+            CSS: 
+            <div class="css-code">
+                background: linear-gradient(45deg, #0000FF, #FF0000);
+            </div>
+        </div>
+
         <button>Generate</button>
     </div>
     <script src="code.js">

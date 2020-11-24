@@ -1,22 +1,20 @@
 let color1 = getColor()
 let color2 = getColor();
 let angle = 50;
-let slider = document.getElementById("angles")
+let slider = document.getElementById("angles");
+let angleLabel = document.querySelector(".angleLabel");
+let cssDiv = document.querySelector(".css-code");
 
 
 
 
-slider.addEventListener("mousemove", function () {
-
+slider.addEventListener("input", function () {
     angle = document.getElementById("angles").value;
-    document.querySelector(".angleLabel").innerHTML = `${angle}<sup>&deg;</sup>`;
-})
-
-
-
-slider.addEventListener("ValueChange", function () {
-    angle = document.getElementById("angles").value;
-    document.querySelector(".angleLabel").innerHTML = angle
+    angleLabel.innerHTML = `Angle: ${angle}<sup>&deg;</sup>`;
+    color1 = getColor();
+    color2 = getColor();
+    cssDiv.innerHTML = `background: linear-gradient(${angle}deg, ${color1}, ${color2});`
+    document.querySelector("body").style.background = `-webkit-linear-gradient(${angle}deg,${color1} ,${color2})`;
 })
 
 // slider.addEventListener("onmousedown")
@@ -29,9 +27,4 @@ function getColor() {
     return hex;
 }
 
-document.querySelector("button").addEventListener("click", function () {
-
-    color1 = getColor();
-    color2 = getColor();
-    document.querySelector("body").style.background = `-webkit-linear-gradient(${angle}deg,${color1} ,${color2})`;
-})
+document.querySelector("button").style.visibility= "hidden";

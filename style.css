@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgba(255,255,255,0.4);
+    color: blue;
+    font-size: 38px;
+    padding: 20px;
+    font-family: "Open Sans",sans-serif;
+}
+.mainDiv {
+    margin: 15rem auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.sliderDiv {
+    background-color: beige;
+    border-radius: 30px;
+    margin: auto;
+    width: 400px;
+}
+
+.angleSection, .css-props {
+    background-color: white;
+    border-radius: 20px;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 5px 10px;
+    padding: 10px 8px;
+}
+
+.css-props{
+    
+    width: 80%;
+    font-size: 24px;
+    padding: 10px auto;
+}
+
+
+.css-code{
+    cursor: pointer;
+    padding: auto 10px;
+    border: 4px solid maroon;
+    border-radius: 30px;
+}
+button {
+    padding: 18px;
+    width: 180px;
+    margin: 20px;
+    font-size: 26px;
+    background-color: cornflowerblue;
+    color: black;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(45deg, blue, red);
+}
+
+label {
+    font-size: 26px;
+}
+
+input[type='range'] {
+    width: 200px;
+    margin: 20px
+}
